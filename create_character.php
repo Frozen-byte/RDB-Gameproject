@@ -12,6 +12,7 @@
 		':height' => $_POST['height'],
 		':born' => $_POST['born']
 	);
+	//Security note: Just for demonstration. Don't try this @ home
 	$query->execute($data);
 
 	//fetch the ID from last INERT INTO command
@@ -33,10 +34,10 @@
 	<h3>Verdiene etwas Geld</h3>
 	<p>Bevor du deinen Helden ausrüsten kannst, solltest du etwas Geld verdienen. Wie möchtest du dein Geld verdienen?</p>
 	<ul>
-		<li><a href="get_money.php?work=beggar">Betteln (20 Gold)</a></li>
-		<li><a href="get_money.php?work=pickpocket">Taschendieb (50 Gold)</a></li>
-		<li><a href="get_money.php?work=peon">Tageslöhner (70 Gold)</a></li>
-		<li><a href="get_money.php?work=errandboy">Botenjunge (100 Gold)</a></li>
+		<li><a href="get_money.php?job=beggar">Betteln (20 Gold)</a></li>
+		<li><a href="get_money.php?job=pickpocket">Taschendieb (50 Gold)</a></li>
+		<li><a href="get_money.php?job=peon">Tageslöhner (70 Gold)</a></li>
+		<li><a href="get_money.php?job=errandboy">Botenjunge (100 Gold)</a></li>
 	</ul>
 </div>
 <?php require_once 'include/footer.html.inc'; ?>
