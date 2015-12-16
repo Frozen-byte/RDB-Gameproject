@@ -29,5 +29,14 @@
 	<h3>Du hats folgenden Charakter erstellt:</h3>
 	<?=html_table_from_array($character)?>
 
+	<h2>Schritt 2</h2>
+	<h3>Verdiene etwas Geld</h3>
+	<p>Bevor du deinen Helden ausrüsten kannst, solltest du etwas Geld verdienen. Wie möchtest du dein Geld verdienen?</p>
+	<ul>
+		<li><a href="get_money.php?work=beggar">Betteln (20 Gold)</a></li>
+		<li><a href="get_money.php?work=pickpocket">Taschendieb (50 Gold)</a></li>
+		<li><a href="get_money.php?work=peon">Tageslöhner (70 Gold)</a></li>
+		<li><a href="get_money.php?work=errandboy">Botenjunge (100 Gold)</a></li>
+	</ul>
 </div>
 <?php require_once 'include/footer.html.inc'; ?>
