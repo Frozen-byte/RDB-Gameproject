@@ -16,7 +16,7 @@
 		ini_set('error_reporting', E_ALL);
 		ini_set('html_errors', 1);
 		ini_set('display_errors', 1);
-		//Throw an excaption if a query fails
+		//Throw an exception if a query fails
 		$sql->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 
